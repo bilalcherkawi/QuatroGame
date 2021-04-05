@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A8D6F6E0-836D-4101-BA4B-7306C00E62E7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Take_3</RootNamespace>
+    <AssemblyName>Take 3</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GameEnd.cs" />
+    <Compile Include="How play.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="How play.Designer.cs">
+      <DependentUpon>How play.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MAINE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAINE.designer.cs">
+      <DependentUpon>MAINE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menue.designer.cs">
+      <DependentUpon>Menue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="option_page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="option_page.Designer.cs">
+      <DependentUpon>option_page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Piece.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="How play.resx">
+      <DependentUpon>How play.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MAINE.resx">
+      <DependentUpon>MAINE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menue.resx">
+      <DependentUpon>Menue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="option_page.resx">
+      <DependentUpon>option_page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0010.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0011.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0101.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0110.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0111.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1000.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1010.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1011.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1101.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1110.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1111.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-refresh-261.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-refresh-641.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-repeat-482.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-undo-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\option_hover1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\option_menu1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\option_normal1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quartoo %282%29 - Copy1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sound on1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sound off1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start_hover1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start_normal1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit_hover1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit_normal1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\....1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\....2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="background sound.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="drum roll.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="loser.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="menusound.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\0000.png" />
+    <Content Include="Resources\icons8-exit-52.png" />
+    <Content Include="Resources\icons8-undo-100.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
